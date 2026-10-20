@@ -14,6 +14,13 @@ class Welcome extends React.Component {
             </div>
         );
     }
+
+    componentDidMount() {
+        this.setState({
+            firstName: "Tarek"
+        });
+        console.log("componentDidMount Phase");
+    }
 }
 
 export default Welcome;
